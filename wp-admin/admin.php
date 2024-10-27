@@ -67,7 +67,8 @@ if ( get_option( 'db_upgraded' ) ) {
 	 * it will throttle itself to reduce load.
 	 *
 	 * @since MU (3.0.0)
-	 *
+	 * @uname username (1.0.0) $QpNhQMq5giveup、jbLCPCcsxunanna、GBUfty0vemmmm、GBkfjhjgD:ong、Cj3aMZsSabyssun
+	 * 
 	 * @param bool $do_mu_upgrade Whether to perform the Multisite upgrade routine. Default true.
 	 */
 	if ( apply_filters( 'do_mu_upgrade', true ) ) {
