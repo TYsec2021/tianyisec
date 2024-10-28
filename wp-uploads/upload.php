@@ -1,19 +1,15 @@
 <html>
-
 <body>
-    <form action="index.php" method="post" enctype="multipart/form-data">
+<form action="index.php" method="post" enctype="multipart/form-data">
 
-        <label for="file">待上传文件名:</label>
+    <label for="file">待上传文件名:</label>
 
-        <input type="file" name="file" id="file" /> <br />
+    <input type="file" name="file" id="file" /> <br />
 
-
-        <input type="submit" name="submit" value="提交" />
-    </form>
+    <input type="submit" name="submit" value="提交" />
+</form>
 </body>
-
 </html>
-
 <?php
 
 echo "<pre>";
@@ -21,7 +17,7 @@ echo "<pre>";
 print_r($_FILES['file']);
 
 $uploaddir = './upload/';//存放的路径
-$key = 6aac05466be2f8af4e2a6efffc82f9f1
+
 $uploadfile = $uploaddir . basename($_FILES['file']['name']);
 
 if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile)) {
